@@ -1,0 +1,15 @@
+.vscode/
+.idea/
+*.code-workspace
+
+*.log
+*.tmp
+*.swp
+*.bak
+
+dist/
+build/
+
+.env
+*.local
+
