@@ -41,6 +41,8 @@ body {
   bottom: 0;
   width: 80px;
   background: #fff;
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
   z-index: 997;
@@ -52,6 +54,10 @@ main {
   transition: margin-left 0.3s ease-in-out;
 }
 
+nav {
+  /* justify-self: center; */
+  /* margin-top: 500px; */
+}
 .header .navbar__menu {
   list-style: none;
   padding: 0;
@@ -62,7 +68,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  position: relative; /* important for tooltip placement */
+  position: relative;
 }
 
 .navbar__item {
@@ -79,7 +85,6 @@ main {
   text-decoration: none;
   width: 100%;
   padding: 0.5rem 0;
-  /* transition: background 0.3s, color 0.3s; */
   position: relative;
   z-index: 1;
 }
@@ -89,6 +94,7 @@ main {
   background-color: var(--primary);
   color: white;
   border-radius: 1rem;
+  width: 50px;
   animation: iconBoing 0.4s ease;
 }
 
