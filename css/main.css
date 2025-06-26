@@ -264,3 +264,144 @@ Hero Section
     font-size: 20px;
   }
 }
+
+/* ###############################################################
+About 
+#################################################################*/
+
+/* ###############################################################
+Resume 
+#################################################################*/
+
+/* ###############################################################
+Portfolio 
+#################################################################*/
+
+/* ###############################################################
+technologies 
+#################################################################*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.card {
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 250px;
+  color: #222;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card.frontend {
+  background: linear-gradient(
+    to bottom,
+    #7b4397,
+    #dc2430
+  ); /* Morado frambuesa */
+  color: whitesmoke;
+}
+
+.card.backend {
+  background: linear-gradient(
+    to bottom,
+    #6a11cb,
+    #2575fc
+  ); /* Violeta eléctrico a azul */
+  color: whitesmoke;
+}
+
+.card.tools {
+  background: linear-gradient(
+    to bottom,
+    #8e2de2,
+    #4a00e0
+  ); /* Púrpura vibrante */
+  color: whitesmoke;
+}
+
+.card.cms {
+  background: linear-gradient(
+    to bottom,
+    #9d50bb,
+    #6e48aa
+  ); /* Lavanda profundo */
+  color: whitesmoke;
+}
+
+.card-icon {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Individual tag colors */
+.tag.html {
+  background-color: #e44d26;
+}
+.tag.css {
+  background-color: #264de4;
+}
+.tag.js {
+  background-color: #f0db4f;
+  color: #222;
+}
+.tag.bootstrap {
+  background-color: #563d7c;
+}
+.tag.wordpress {
+  background-color: #21759b;
+}
+.tag.rails {
+  background-color: #cc0000;
+}
+.tag.django {
+  background-color: #092e20;
+}
+.tag.php {
+  background-color: #8993be;
+}
+.tag.python {
+  background-color: #3776ab;
+}
+.tag.git {
+  background-color: #f1502f;
+}
+.tag.wagtail {
+  background-color: #5fbcd3;
+}
+.tag.linux {
+  background-color: #333;
+}
+.tag.mysql {
+  background-color: #00758f;
+}
+.tag.docker {
+  background-color: #0db7ed;
+}
