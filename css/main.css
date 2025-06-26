@@ -54,10 +54,6 @@ main {
   transition: margin-left 0.3s ease-in-out;
 }
 
-nav {
-  /* justify-self: center; */
-  /* margin-top: 500px; */
-}
 .header .navbar__menu {
   list-style: none;
   padding: 0;
@@ -215,7 +211,7 @@ Hero Section
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 80%);
   position: absolute;
   inset: 0;
   z-index: 2;
