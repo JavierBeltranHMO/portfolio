@@ -268,6 +268,32 @@ Hero Section
 /* ###############################################################
 About 
 #################################################################*/
+.about h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about ul strong {
+  margin-right: 10px;
+}
+
+.about ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
 
 /* ###############################################################
 Resume 
@@ -303,7 +329,7 @@ technologies
   background: linear-gradient(
     to bottom,
     #7b4397,
-    #dc2430
+    #5b24dc
   ); /* Morado frambuesa */
   color: whitesmoke;
 }
@@ -351,12 +377,4 @@ technologies
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-}
-
-.tag {
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: bold;
 }
