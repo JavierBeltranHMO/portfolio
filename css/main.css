@@ -349,14 +349,14 @@ Resume
 /* ###############################################################
 Portfolio 
 #################################################################*/
-.portfolio .portfolio-filters {
+.portfolio {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.portfolio li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -370,22 +370,22 @@ Portfolio
   font-family: var(--heading-font);
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.portfolio li:hover,
+.portfolio li {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.portfolio li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.portfolio li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .portfolio li {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
