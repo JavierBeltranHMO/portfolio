@@ -57,7 +57,6 @@ const observer = new IntersectionObserver(
   }
 );
 
-document.querySelectorAll("section").forEach((section) => {
-  section.classList.add("reveal");
-  observer.observe(section);
+document.querySelectorAll(".reveal").forEach((el) => {
+  observer.observe(el);
 });
