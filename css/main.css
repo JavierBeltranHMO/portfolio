@@ -66,6 +66,10 @@
 /* ###############################################################
 General stuff 
 #################################################################*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -98,6 +102,13 @@ h6 {
   transform: translateY(0);
 }
 
+section {
+  scroll-margin-top: 220px;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
 /* ###############################################################
 Header 
 #################################################################*/
