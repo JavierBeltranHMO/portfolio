@@ -60,3 +60,37 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => {
   observer.observe(el);
 });
+
+//progressbar fill
+const progressBars = document.querySelectorAll(".progress.reveal-bar");
+
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const bar = entry.target.querySelector(".progress-bar");
+        const val = entry.target.querySelector(".val");
+        const target = parseInt(bar.getAttribute("data-progress"), 10);
+
+        // Animar la barra
+        bar.style.width = `${target}%`;
+
+        // Animar el número
+        let count = 0;
+        const interval = setInterval(() => {
+          if (count <= target) {
+            val.textContent = `${count}%`;
+            count++;
+          } else {
+            clearInterval(interval);
+          }
+        }, 10); // 10ms por incremento (~1s total)
+
+        observer2.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+progressBars.forEach((bar) => observer2.observe(bar));

@@ -625,8 +625,9 @@ technologies
 }
 
 .skills .progress-bar {
-  width: 1px;
+  width: 0;
   height: 10px;
-  transition: 0.9s;
+  transition: width 0.9s ease-in-out;
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
