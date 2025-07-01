@@ -41,3 +41,23 @@ function navmenuScrollspy() {
 }
 window.addEventListener("load", navmenuScrollspy);
 document.addEventListener("scroll", navmenuScrollspy);
+
+// section fade in animation
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        observer.unobserve(entry.target); // solo se anima una vez
+      }
+    });
+  },
+  {
+    threshold: 0.1, // activa cuando el 10% del elemento está visible
+  }
+);
+
+document.querySelectorAll("section").forEach((section) => {
+  section.classList.add("reveal");
+  observer.observe(section);
+});

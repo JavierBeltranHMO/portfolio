@@ -87,6 +87,17 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ###############################################################
 Header 
 #################################################################*/
