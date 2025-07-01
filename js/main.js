@@ -10,10 +10,29 @@ headerToggleBtn.addEventListener("click", headerToggle);
 
 //Hide mobile nav on same-page/hash links
 document.querySelectorAll("#navmenu a").forEach((navmenu) => {
-  navmenu.addEventListener("click", () => {
+  navmenu.addEventListener("click", (e) => {
+    const hash = navmenu.hash;
+    const target = document.querySelector(hash);
+    if (!hash || !target) return;
+
+    e.preventDefault();
+
+    // Cierra el header si está abierto
     if (document.querySelector(".header-show")) {
       headerToggle();
     }
+
+    // Espera a que el header se cierre (animación)
+    setTimeout(() => {
+      const scrollMarginTop = getComputedStyle(target).scrollMarginTop;
+      window.scrollTo({
+        top: target.offsetTop - parseInt(scrollMarginTop),
+        behavior: "smooth",
+      });
+
+      // Cambia la URL manualmente sin salto automático
+      history.pushState(null, null, hash);
+    }, 300); // puedes ajustar el tiempo si tu animación es más lenta
   });
 });
 
