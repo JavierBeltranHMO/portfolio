@@ -17,6 +17,22 @@ document.querySelectorAll("#navmenu a").forEach((navmenu) => {
   });
 });
 
+//Correct position
+window.addEventListener("load", function (e) {
+  if (window.location.hash) {
+    if (document.querySelector(window.location.hash)) {
+      setTimeout(() => {
+        let section = document.querySelector(window.location.hash);
+        let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+        window.scrollTo({
+          top: section.offsetTop - parseInt(scrollMarginTop),
+          behavior: "smooth",
+        });
+      }, 100);
+    }
+  }
+});
+
 //Navmenu Scroll
 let navmenulinks = document.querySelectorAll(".navmenu a");
 

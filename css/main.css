@@ -68,6 +68,7 @@ General stuff
 #################################################################*/
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -103,11 +104,17 @@ h6 {
 }
 
 section {
-  scroll-margin-top: 220px;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
+}
+
+.anchor-offset {
+  position: relative;
+  top: -100px; /* ajusta esto a la altura de tu header en móvil */
+  height: 0;
+  visibility: hidden;
 }
 /* ###############################################################
 Header 
@@ -118,6 +125,7 @@ body {
   background: var(--background-color);
   font-family: var(--nav-font);
 }
+
 /* Sidebar Header */
 .header {
   position: fixed;
@@ -535,6 +543,7 @@ Portfolio
 /* ###############################################################
 technologies 
 #################################################################*/
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
