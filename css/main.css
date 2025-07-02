@@ -146,7 +146,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 80px;
+  min-width: 100px;
   background: #181826;
   display: flex;
   justify-content: center;
@@ -157,7 +157,7 @@ body {
 }
 
 main {
-  margin-left: 80px;
+  margin-left: 100px;
   transition: margin-left 0.3s ease-in-out;
 }
 
@@ -257,7 +257,9 @@ main {
     width: 220px;
     background-color: var(--background-color);
     border-right: 1px solid rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+    /* overflow: hidden; */
+    align-items: normal;
+    justify-content: normal;
   }
 
   .header.header-show {
@@ -268,7 +270,7 @@ main {
     display: flex;
     position: fixed;
     top: 15px;
-    right: 15px;
+    left: 15px;
     background: var(--accent-color);
     color: var(--contrast-color);
     width: 40px;
@@ -290,6 +292,10 @@ main {
 
   .header.header-show ~ main {
     margin-left: 220px;
+  }
+
+  nav {
+    margin-left: 20px;
   }
 }
 
