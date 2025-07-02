@@ -121,6 +121,20 @@ Header
 #################################################################*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
+.language-header {
+  position: fixed;
+  top: 0;
+  left: 80px; /* Mismo ancho que tu sidebar */
+  width: calc(100% - 80px);
+  background-color: transparent;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
 body {
   background: var(--background-color);
   font-family: var(--nav-font);

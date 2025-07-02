@@ -129,3 +129,17 @@ const observer2 = new IntersectionObserver(
 );
 
 progressBars.forEach((bar) => observer2.observe(bar));
+
+//change language
+document.addEventListener("DOMContentLoaded", function () {
+  const langLabel = document.getElementById("langLabel");
+  const path = window.location.pathname;
+
+  if (path.includes("/en/")) {
+    langLabel.textContent = "English";
+  } else if (path.includes("/es/")) {
+    langLabel.textContent = "Español";
+  } else {
+    langLabel.textContent = "Idioma"; // Valor por defecto si no se detecta
+  }
+});
