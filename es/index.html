@@ -3,61 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <title> Javier Beltran | Portfolio</title>
+    
+  <!-- Favicons -->
+
+  <!-- Fonts -->
+
+  <!-- Bootstrap css ile -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="try.css">
-    <title> Español e intentar cosas</title>
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+
+    
+  <!-- Main css file -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    <header class="header">
-        <nav>
+<body class="dark-background">
+   <header id="header" class="header">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+        <nav id="navmenu" class="navmenu">
             <ul class="navbar__menu">
             <li class="navbar__item">
-                <a href="#hero" class="navbar__link">
+                <a href="#hero" class="active navbar__link">
                 <i class="bi bi-house-door"></i><span>Home</span>
                 </a>
             </li>
             <li class="navbar__item">
                 <a href="#about" class="navbar__link">
-                <i class="bi bi-person"></i><span>About</span>
+                <i class="bi bi-person"></i><span>Perfil Profesional</span>
                 </a>
             </li>
             <li class="navbar__item">
                 <a href="#resume" class="navbar__link">
-                <i class="bi bi-briefcase"></i><span>Experience</span>
+                <i class="bi bi-briefcase"></i><span>Experiencia Laboral</span>
                 </a>
             </li>
             <li class="navbar__item">
                 <a href="#portfolio" class="navbar__link">
-                <i class="bi bi-grid"></i><span>Portfolio</span>
+                <i class="bi bi-grid"></i><span>Portafolio</span>
                 </a>
             </li>
             <li class="navbar__item">
                 <a href="#technologies" class="navbar__link">
-                <i class="bi bi-cpu"></i><span>Technologies</span>
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="#contact" class="navbar__link">
-                <i class="bi bi-envelope"></i><span>Contact</span>
+                <i class="bi bi-cpu"></i><span>Tecnologías</span>
                 </a>
             </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="hero"></section>
-        <section id="about">
-            <div>
-                <h2>Sobre Mí</h2>
-                <p>
-                    Soy un desarrollador Full-Stack con más de tres años de experiencia creando sitios web responsivos y aplicaciones web escalables. Trabajo principalmente con <strong>Django</strong>, <strong>Wagtail CMS</strong> y <strong>Ruby on Rails</strong>, enfocándome en escribir código limpio y diseñar experiencias de usuario intuitivas.
-                </p>
-                <p>
-                    Disfruto tanto del frontend como del backend: desde construir interfaces accesibles hasta diseñar bases de datos eficientes y APIs REST. Me adapto bien al trabajo en equipo o autónomo, y me interesa especialmente el rendimiento, la usabilidad y aportar soluciones que generen impacto real.
-                </p>
+    <main class="main dark-background">
+        <!-- hero -->
+        <section class="section hero bg-primary text-white py-5" id="hero">
+            <img src="../images/hero.png" alt="hero background" />
+            <div class="container text-center text-white reveal">
+                <h2 class="display-4">Desarrollador Full-Stack</h2>
+                <p class="lead">Javier Beltran</p>
+                <div class="social-links d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/javier-alejandro-beltran-montiel-3172222b1/?locale=es_ES" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://gitlab.com/javier.beltran.hmo" target="_blank" title="GitLab"><i class="bi bi-gitlab"></i></a>
+                    <a href="../resume/ES-WebDevTemplate.pdf" target="_blank" title="Resume"><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                </div>
             </div>
         </section>
+        <!--end hero -->
+
+        <!-- about -->
+        <section id="about" class="about reveal py-5">
+            <div class="container">
+                <!-- title -->
+                <div class="mb-5 text-center">
+                    <h2>Perfil Profesional</h2>
+                </div>
+                
+                <!-- Columns -->
+                <div class="row justify-content-center">
+                    <div class="col-md-14 col-lg-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <!-- About paragraph Left-->
+                                <p>
+                                    Soy desarrollador Full-Stack con más de tres años de experiencia en la creación de sitios web responsivos y aplicaciones web escalables. Trabajo principalmente con <strong>Django</strong>, <strong>Wagtail CMS</strong> y <strong>Ruby on Rails</strong>, creando código limpio y mantenible, así como experiencias de usuario intuitivas.
+                                </p>
+                                <p>
+                                    Disfruto desarrollando tanto el front-end como el back-end de las aplicaciones: desde crear interfaces accesibles hasta diseñar modelos de base de datos eficientes y APIs RESTful. Me siento cómodo trabajando de forma independiente o en equipos ágiles, y me importa profundamente el rendimiento, la usabilidad y ofrecer verdadero valor a través de la tecnología.
+                                </p>
+                             </div>
+                             <!-- Skills  Right-->
+                             <div class="col-md-6">
+                                 <h3 class="mb-3">Mis Habilidades</h3>
+                                 <div class="d-flex flex-wrap gap-2 py-2">
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">HTML</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">CSS</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">JavaScript</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Bootstrap</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">WordPress</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Ruby on Rails</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Django</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">PHP</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Python</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">GIT</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Wagtail</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Linux</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">MySQL</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">PostgreSQL</span>
+                                     <span class="badge bg-light text-dark px-3 py-2 fw-semibold">Docker</span>
+                                 </div>
+                             </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- info -->
+                <div class="row gy-4 justify-content-center align-items-center">
+                    <div class="col-lg-4">
+                        <img src="https://placehold.co/400x400" alt="Javier Beltran" class="img-fluid"> <!--TODO profile pic-->
+                    </div>
+                     <div class="col-lg-8 content">
+                        <!-- summary -->
+                        <div class="row ">
+                            <div>
+                                <h3 class="mb-3">Desarrollador Web</h3>
+                                <p class="fst-italic py-3">
+                                    Creo en el poder del aprendizaje y la iteración: la tecnología evoluciona rápidamente, y yo también.
+                                </p>
+                            </div>
+                            
+                            <!-- contact info -->
+                            <div class="col-lg-6 ">
+                                <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>beltranmontiel.javier@gmail.com</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>+52 (662) 222 - 3558</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Título:</strong> <span>Ingeniería (Licenciatura en Ingeniería)</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Hermosillo, Mexico</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- education -->
+                        <div class="row">
+                            <div class="row mt-5">
+                                <div class="col-md-12">
+                                    <h3 class="mb-3"> Education</h3>
+                                    
+                                    <div class="resume-item pb-0">
+                                        <h5 class="mb-1 fw-bold">Biomedical Engineer</h5>
+                                        <h6 class="text-muted mb-1">Specialization in Technological Applications</h6>
+                                        <p class="mb-1"><strong>2018 - 2024</strong></p>
+                                        <p class="mb-1"><em>Instituto Tecnológico de Hermosillo</em></p>
+                                        <p>
+                                            Specialized in developing software to create innovative solutions, with experience in optimizing tasks through the use of software for various applications, including web-based platforms and digital systems.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end about -->
+
         <section id="skills"></section>
         <section id="resume"></section>
         <section id="portfolio"></section>
@@ -110,6 +218,6 @@
     </main>
     <footer></footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="try.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
