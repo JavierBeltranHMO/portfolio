@@ -26,7 +26,7 @@
 
 ## Demo 🚀
 
-🔗 [Live Portfolio](https://portfolio-3c9553.gitlab.io/en/)
+🔗 [Live Portfolio](https://javierbeltranhmo.github.io/portfolio/en/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
